@@ -17,16 +17,51 @@ itmo-python-backend/
 
 # Запуск проекта
 
-1. ``` git clone https://github.com/Stepan5024/itmo-python-backend.git ```
-2. ``` cd ``` 
-3. ``` python3.10 -m venv venv ```
-3.1 Если есть ошибки установки python 3.10 brew install python@3.10
-4. masOs: ```source venv/bin/activate``` windows ```venv\Scripts\activate```
-5. ```pip install -r requirements.txt```
-6. ```uvicorn hw1.myapp:app --reload```
+1. Скачать код
+```bash
+git clone https://github.com/Stepan5024/itmo-python-backend.git
+```
+2. Перейти в скачанную папку
+```bash
+cd itmo-python-backend
+``` 
+3. Создать env
+```bash
+python3.10 -m venv venv
+```
+3.1 Если есть ошибки установки python 3.10 то попробуйте 
+```bash 
+brew install python@3.10
+```
+4. masOs: 
+```bash 
+source venv/bin/activate
+``` 
+windows 
+```bash
+venv\Scripts\activate
+```
+5. Установка зависимостей 
+```bash
+pip install -r hw1/requirements.txt
+```
+6. Заупск сервера 
+```bash 
+uvicorn hw1.myapp:app --reload
+```
 7. Открыть новый терминал по адресу папки <your_path>/itmo-python-backend/hw1
-8. Активировать зависимости masOs: ```source venv/bin/activate``` windows ```venv\Scripts\activate```
-9. Запустить тесты ```pytest tests/```
+8. Активировать зависимости masOs: 
+```bash 
+source venv/bin/activate
+``` 
+windows 
+```bash 
+venv\Scripts\activate
+```
+9. Запустить тесты 
+```bash 
+pytest hw1/tests/
+```
 
 
 # Описание задания
